@@ -21,7 +21,9 @@
         </div>
         <div>
             <form:form action="processAddCustomerForm" modelAttribute="customer" method="post">
-                First name: <form:input path="name"/>
+                First name: <form:input path="firstName"/>
+                <br><br>
+                First name: <form:input path="lastName"/>
                 <br><br>
                 Password:   <form:input path="password"/>
                 <br><br>

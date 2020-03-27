@@ -6,8 +6,9 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import ros.java.spring.dao.DAOCustomer;
 import ros.java.spring.entity.EntityCustomer;
+import ros.java.spring.service.ServiceCustomer;
+
 import java.util.List;
 
 @Controller
@@ -15,12 +16,12 @@ import java.util.List;
 public class ControllerCustomer {
 
     @Autowired
-    private DAOCustomer daoCustomer;
+    private ServiceCustomer serviceCustomer;
 
     @RequestMapping("/list")
     public String customersList(Model model){
 
-        List<EntityCustomer> customers = daoCustomer.getCustomers();
+        List<EntityCustomer> customers = serviceCustomer.getCustomers();
         model.addAttribute("customers", customers);
 
         return "customer-list";
@@ -38,7 +39,7 @@ public class ControllerCustomer {
     @PostMapping("/processAddCustomerForm")
     public String addCustomer(@ModelAttribute("customer") EntityCustomer customer){
 
-        daoCustomer.addCustomer(customer);
+        serviceCustomer.addCustomer(customer);
 
         return "redirect:/customer/list";
     }

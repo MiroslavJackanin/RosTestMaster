@@ -13,8 +13,11 @@ public class EntityCustomer {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @Column(name = "name", nullable = false, length = 50)
-    private String name;
+    @Column(name = "first_name", nullable = false, length = 50)
+    private String firstName;
+
+    @Column(name = "last_name", nullable = false, length = 50)
+    private String lastName;
 
     @Column(name = "email", nullable = false, length = 100)
     private String email;
@@ -27,8 +30,9 @@ public class EntityCustomer {
 
     public EntityCustomer() {
     }
-    public EntityCustomer(String name, String password, String email, Timestamp registrationDate){
-        this.name = name;
+    public EntityCustomer(String firstName, String lastName, String password, String email, Timestamp registrationDate){
+        this.firstName = firstName;
+        this.lastName = lastName;
         this.email = email;
         this.password = password;
         this.registrationDate = registrationDate;
@@ -37,8 +41,11 @@ public class EntityCustomer {
     public int getId() {
         return id;
     }
-    public String getName() {
-        return name;
+    public String getFirstName() {
+        return firstName;
+    }
+    public String getLastName(){
+        return lastName;
     }
     public String getEmail() {
         return email;
@@ -53,8 +60,11 @@ public class EntityCustomer {
     public void setId(int id) {
         this.id = id;
     }
-    public void setName(String name) {
-        this.name = name;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+    public void setLastName(String lastName){
+        this.lastName = lastName;
     }
     public void setEmail(String email) {
         this.email = email;
@@ -70,7 +80,8 @@ public class EntityCustomer {
     public String toString() {
         return "EntityCustomer{" +
                 "id=" + id +
-                ", name='" + name + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
                 ", email='" + email + '\'' +
                 ", password='" + password + '\'' +
                 ", registrationDate=" + registrationDate +
@@ -82,13 +93,14 @@ public class EntityCustomer {
         if (o == null || getClass() != o.getClass()) return false;
         EntityCustomer that = (EntityCustomer) o;
         return id == that.id &&
-                Objects.equals(name, that.name) &&
+                Objects.equals(firstName, that.firstName) &&
+                Objects.equals(lastName, that.lastName) &&
                 Objects.equals(email, that.email) &&
                 Objects.equals(password, that.password) &&
                 Objects.equals(registrationDate, that.registrationDate);
     }
     @Override
     public int hashCode() {
-        return Objects.hash(id, name, email, password, registrationDate);
+        return Objects.hash(id, firstName, lastName, email, password, registrationDate);
     }
 }

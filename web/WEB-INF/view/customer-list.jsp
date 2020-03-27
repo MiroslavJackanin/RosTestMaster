@@ -27,7 +27,8 @@
                 <table>
                     <tr>
                         <th>Id</th>
-                        <th>Name</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
                         <th>Password</th>
                         <th>Email</th>
                         <th>Registration Date</th>
@@ -35,7 +36,8 @@
                     <c:forEach var="customer" items="${customers}">
                         <tr>
                             <td>${customer.id}</td>
-                            <td>${customer.name}</td>
+                            <td>${customer.firstName}</td>
+                            <td>${customer.lastName}</td>
                             <td>${customer.password}</td>
                             <td>${customer.email}</td>
                             <td>${customer.registrationDate}</td>
