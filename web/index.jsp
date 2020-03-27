@@ -12,5 +12,9 @@
   </head>
   <body>
   <h2>This is Index page</h2>
+  <br>
+  <a href="customer/list">Go to customer list</a>
+  <br>
+  <a href="customer/showAddCustomerForm">Add customer</a>
   </body>
 </html>

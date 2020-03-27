@@ -27,6 +27,12 @@ public class EntityCustomer {
 
     public EntityCustomer() {
     }
+    public EntityCustomer(String name, String password, String email, Timestamp registrationDate){
+        this.name = name;
+        this.email = email;
+        this.password = password;
+        this.registrationDate = registrationDate;
+    }
 
     public int getId() {
         return id;
