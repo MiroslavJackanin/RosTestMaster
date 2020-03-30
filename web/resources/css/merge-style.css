@@ -132,18 +132,14 @@ article{
 	width:95%;
 	height:560px;
 	margin:0 auto;
-	background:url(obr/headPhoto.jpg);
 	background-size:cover;
-	background-position:bottom;
-	background-repeat:no-repeat;
+	background: url("../img/headPhoto.jpg") no-repeat bottom;
 }
 .iconRestaurant{
 	width:90px;
 	height:60px;
-	background:url(obr/restaurantIcon.png);
 	background-size:contain;
-	background-position:bottom;
-	background-repeat:no-repeat;
+	background: url("../img/restaurantIcon.png") no-repeat bottom;
 	margin:0 auto;
 	margin-top:150px;
 }

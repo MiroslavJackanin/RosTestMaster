@@ -34,15 +34,20 @@ public class ControllerCustomer {
         EntityCustomer customer = new EntityCustomer();
         model.addAttribute("customer", customer);
 
-        return "add-customer-form";
+        //return "add-customer-form";
+        return "merge-index";
     }
 
     @PostMapping("/processAddCustomerForm")
     public String addCustomer(@ModelAttribute("customer") EntityCustomer customer){
 
-        serviceCustomer.addCustomer(customer);
-
-        return "redirect:/customer/list";
+        if (customer.getCustomerPassword().equals(customer.getCustomerCheckPassword())){
+            serviceCustomer.addCustomer(customer);
+            return "redirect:/customer/list";
+        }else{
+            //return "add-customer-form";
+            return "merge-index";
+        }
     }
 
     @RequestMapping("/showUpdateCustomerForm")
@@ -62,25 +67,4 @@ public class ControllerCustomer {
 
         return "redirect:/customer/list";
     }
-
-    /*@RequestMapping("/mergeIndex")
-    public String mergeIndex(Model model){
-        EntityCustomer customer = new EntityCustomer();
-        model.addAttribute("customer", customer);
-        String checkPassword = "";
-        model.addAttribute("checkPassword", checkPassword);
-
-        return "merge-index";
-    }
-
-    @RequestMapping("/validateAddCustomerForm")
-    public String validateForm(Model model){
-        EntityCustomer customer = (EntityCustomer) model.getAttribute("customer");
-        String checkPassword = (String) model.getAttribute("checkPassword");
-
-        if (serviceCustomer.validateForm(customer, checkPassword)){
-            return "redirect:/processAddCustomerForm";
-        }else
-            return "mergeIndex";
-    }*/
 }

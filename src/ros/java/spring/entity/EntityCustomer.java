@@ -11,76 +11,86 @@ public class EntityCustomer {
     @Id
     @Column(name = "id", nullable = false)
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private int customerId;
 
     @Column(name = "first_name", nullable = false, length = 50)
-    private String firstName;
+    private String customerFirstName;
 
     @Column(name = "last_name", nullable = false, length = 50)
-    private String lastName;
+    private String customerLastName;
 
     @Column(name = "email", nullable = false, length = 100)
-    private String email;
+    private String customerEmail;
 
     @Column(name = "phoneNumber", nullable = false, length = 100)
-    private String phone;
+    private String customerPhone;
 
     @Column(name = "password", nullable = false, length = 100)
-    private String password;
+    private String customerPassword;
+
+    @Transient
+    private String customerCheckPassword;
 
     @Column(name = "registrationDate", nullable = false)
     private Timestamp registrationDate;
 
     public EntityCustomer() {
     }
-    public EntityCustomer(String firstName, String lastName, String password, String email, String phone,Timestamp registrationDate){
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.email = email;
-        this.phone = phone;
-        this.password = password;
+    public EntityCustomer(String customerFirstName, String customerLastName, String customerPassword, String customerCheckPassword, String customerEmail, String customerPhone, Timestamp registrationDate){
+        this.customerFirstName = customerFirstName;
+        this.customerLastName = customerLastName;
+        this.customerEmail = customerEmail;
+        this.customerPhone = customerPhone;
+        this.customerPassword = customerPassword;
+        this.customerCheckPassword = customerCheckPassword;
         this.registrationDate = registrationDate;
     }
 
-    public int getId() {
-        return id;
+    public int getCustomerId() {
+        return customerId;
     }
-    public String getFirstName() {
-        return firstName;
+    public String getCustomerFirstName() {
+        return customerFirstName;
     }
-    public String getLastName(){
-        return lastName;
+    public String getCustomerLastName(){
+        return customerLastName;
     }
-    public String getEmail() {
-        return email;
+    public String getCustomerEmail() {
+        return customerEmail;
     }
-    public String getPhone() {
-        return phone;
+    public String getCustomerPhone() {
+        return customerPhone;
     }
-    public String getPassword() {
-        return password;
+    public String getCustomerPassword() {
+        return customerPassword;
+    }
+    public String getCustomerCheckPassword() {
+        return customerCheckPassword;
     }
     public Timestamp getRegistrationDate() {
         return registrationDate;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setCustomerId(int id) {
+        this.customerId = id;
     }
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+    public void setCustomerFirstName(String firstName) {
+        this.customerFirstName = firstName;
     }
-    public void setLastName(String lastName){
-        this.lastName = lastName;
+    public void setCustomerLastName(String lastName){
+        this.customerLastName = lastName;
     }
-    public void setEmail(String email) {
-        this.email = email;
+    public void setCustomerEmail(String email) {
+        this.customerEmail = email;
     }
-    public void setPhone(String phone) {
-        this.phone = phone;
+    public void setCustomerPhone(String phone) {
+        this.customerPhone = phone;
     }
-    public void setPassword(String password) {
-        this.password = password;
+    public void setCustomerPassword(String password) {
+        this.customerPassword = password;
+    }
+    public void setCustomerCheckPassword(String customerCheckPassword) {
+        this.customerCheckPassword = customerCheckPassword;
     }
     public void setRegistrationDate(Timestamp registrationDate) {
         this.registrationDate = registrationDate;
@@ -89,12 +99,13 @@ public class EntityCustomer {
     @Override
     public String toString() {
         return "EntityCustomer{" +
-                "id=" + id +
-                ", firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", email='" + email + '\'' +
-                ", phone='" + phone + '\'' +
-                ", password='" + password + '\'' +
+                "id=" + customerId +
+                ", firstName='" + customerFirstName + '\'' +
+                ", lastName='" + customerLastName + '\'' +
+                ", email='" + customerEmail + '\'' +
+                ", phone='" + customerPhone + '\'' +
+                ", password='" + customerPassword + '\'' +
+                ", checkPassword='" + customerCheckPassword + '\'' +
                 ", registrationDate=" + registrationDate +
                 '}';
     }
@@ -103,16 +114,17 @@ public class EntityCustomer {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         EntityCustomer that = (EntityCustomer) o;
-        return id == that.id &&
-                Objects.equals(firstName, that.firstName) &&
-                Objects.equals(lastName, that.lastName) &&
-                Objects.equals(email, that.email) &&
-                Objects.equals(phone, that.phone) &&
-                Objects.equals(password, that.password) &&
+        return customerId == that.customerId &&
+                Objects.equals(customerFirstName, that.customerFirstName) &&
+                Objects.equals(customerLastName, that.customerLastName) &&
+                Objects.equals(customerEmail, that.customerEmail) &&
+                Objects.equals(customerPhone, that.customerPhone) &&
+                Objects.equals(customerPassword, that.customerPassword) &&
+                Objects.equals(customerCheckPassword, that.customerCheckPassword) &&
                 Objects.equals(registrationDate, that.registrationDate);
     }
     @Override
     public int hashCode() {
-        return Objects.hash(id, firstName, lastName, email, phone, password, registrationDate);
+        return Objects.hash(customerId, customerFirstName, customerLastName, customerEmail, customerPhone, customerPassword, customerCheckPassword,registrationDate);
     }
 }

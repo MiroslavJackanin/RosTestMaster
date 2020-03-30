@@ -19,7 +19,7 @@ public class DAOCustomerImpl implements DAOCustomer {
     public List<EntityCustomer> getCustomers() {
 
         Session session = sessionFactory.getCurrentSession();
-        Query<EntityCustomer> query = session.createQuery("from EntityCustomer ORDER BY lastName", EntityCustomer.class);
+        Query<EntityCustomer> query = session.createQuery("from EntityCustomer ORDER BY customerLastName", EntityCustomer.class);
 
         return query.getResultList();
     }
@@ -44,13 +44,8 @@ public class DAOCustomerImpl implements DAOCustomer {
     public void deleteCustomer(int theId) {
         Session session = sessionFactory.getCurrentSession();
 
-        Query query = session.createQuery("DELETE FROM EntityCustomer WHERE id=:customerId");
+        Query query = session.createQuery("DELETE FROM EntityCustomer WHERE customerId=:customerId");
         query.setParameter("customerId", theId);
         query.executeUpdate();
     }
-
-/*    @Override
-    public boolean validateForm(EntityCustomer customer, String checkPassword) {
-        return customer.getPassword().equals(checkPassword);
-    }*/
 }

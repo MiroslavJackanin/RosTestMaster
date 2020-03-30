@@ -38,19 +38,19 @@
                     <c:forEach var="customer" items="${customers}">
 
                         <c:url var="updateLink" value="/customer/showUpdateCustomerForm">
-                            <c:param name="customerId" value="${customer.id}"/>
+                            <c:param name="customerId" value="${customer.customerId}"/>
                         </c:url>
                         <c:url var="deleteLink" value="/customer/delete">
-                            <c:param name="customerId" value="${customer.id}"/>
+                            <c:param name="customerId" value="${customer.customerId}"/>
                         </c:url>
 
                         <tr>
-                            <td>${customer.id}</td>
-                            <td>${customer.firstName}</td>
-                            <td>${customer.lastName}</td>
-                            <td>${customer.password}</td>
-                            <td>${customer.email}</td>
-                            <td>${customer.phone}</td>
+                            <td>${customer.customerId}</td>
+                            <td>${customer.customerFirstName}</td>
+                            <td>${customer.customerLastName}</td>
+                            <td>${customer.customerPassword}</td>
+                            <td>${customer.customerEmail}</td>
+                            <td>${customer.customerPhone}</td>
                             <td>${customer.registrationDate}</td>
                             <td>
                                 <a href="${updateLink}">Update</a>

@@ -12,6 +12,7 @@
 	<link rel="icon" href="obr/icon.png">
     <link href="style.css" rel="stylesheet">
 --%>
+	<link rel="icon" href="${pageContext.request.contextPath}/resources/img/headPhoto.jpg">
 	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/merge-style.css" />
 </head>
 <body class="homepageCustomer">
@@ -66,7 +67,7 @@
 	</section>
 	
 	<section id="registerHub">
-		<div id="exit" onClick="exit()">X</div>
+		<div class="exit" onClick="exit()">X</div>
 	
 		<p class="registerHubHead">Registrovať sa</p>
 		<div class="leftReg">
@@ -86,28 +87,29 @@
 		<form:form cssClass="registerCustomer" action="processAddCustomerForm" modelAttribute="customer" method="post">
 			<div class="regWrapLeft">
 				<label class="regLabel">Meno :</label><br>
-				<form:input cssClass="regInput" path="firstName"/>
+				<form:input cssClass="regInput" path="customerFirstName"/>
 
 				<label class="regLabel">Priezvisko :</label><br>
-				<form:input cssClass="regInput" path="lastName"/>
+				<form:input cssClass="regInput" path="customerLastName"/>
 
 				<label class="regLabel">E-mailová adresa :</label><br>
-				<form:input cssClass="regInput" path="email"/>
+				<form:input cssClass="regInput" path="customerEmail"/>
 			</div>
 			<div class="regWrapRight">
 
 				<label class="regLabel">Telefónne číslo :</label><br>
-				<form:input cssClass="regInput" path="phone"/>
+				<form:input cssClass="regInput" path="customerPhone"/>
 
 				<label class="regLabel">Heslo :</label><br>
-				<form:input cssClass="regInput" path="password"/>
+				<form:input cssClass="regInput" path="customerPassword"/>
 
 				<label class="regLabel">Potvrdenie hesla :</label><br>
-				<form:input cssClass="regInput" path="password"/>
+				<form:input cssClass="regInput" path="customerCheckPassword"/>
 			</div>
+			<input class="regSubmit" type="submit" value="Registrovať sa">
 		</form:form>
 
-		<form class="registerCustomer">
+		<%--<form class="registerCustomer">
 		
 		<div class="regWrapLeft">
 			<label class="regLabel">Meno :</label><br>
@@ -131,7 +133,7 @@
 			<input class="regInput" type="password"><br>
 		</div>
 			<input class="regSubmit" type="submit" value="Registrovať sa">
-		</form>
+		</form>--%>
 	</section>
 	
 	
@@ -630,6 +632,6 @@ LOGIN LOGOUT >
 <div class="rightWall"></div>
 
 
-    <script src="js/app.js"></script>
+    <script src="${pageContext.request.contextPath}/resources/js/app.js"></script>
 </body>
 </html>

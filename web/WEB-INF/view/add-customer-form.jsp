@@ -22,17 +22,19 @@
         <div>
             <form:form action="processAddCustomerForm" modelAttribute="customer" method="post">
                 
-                <form:hidden path="id"/>
+                <form:hidden path="customerId"/>
                 
-                First name: <form:input path="firstName"/>
+                First name: <form:input path="customerFirstName"/>
                 <br><br>
-                Last name: <form:input path="lastName"/>
+                Last name: <form:input path="customerLastName"/>
                 <br><br>
-                Password:   <form:input path="password"/>
+                Password:   <form:input path="customerPassword"/>
                 <br><br>
-                Email:      <form:input path="email"/>
+                Check Password:   <form:input path="customerCheckPassword"/>
                 <br><br>
-                Phone number:<form:input path="phone"/>
+                Email:      <form:input path="customerEmail"/>
+                <br><br>
+                Phone number:<form:input path="customerPhone"/>
                 <br><br>
                 <input type="submit" value="Submit" class="add-button">
             </form:form>

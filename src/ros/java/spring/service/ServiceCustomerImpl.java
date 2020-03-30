@@ -38,9 +38,4 @@ public class ServiceCustomerImpl implements ServiceCustomer {
 
         daoCustomer.deleteCustomer(id);
     }
-
-/*    @Override
-    public boolean validateForm(EntityCustomer customer, String checkPassword) {
-        return daoCustomer.validateForm(customer, checkPassword);
-    }*/
 }
