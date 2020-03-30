@@ -7,4 +7,12 @@ public interface DAOCustomer {
 
     List<EntityCustomer> getCustomers();
     void addCustomer(EntityCustomer customer);
+
+    EntityCustomer getCustomer(int id);
+
+    void deleteCustomer(int id);
+
+/*
+    boolean validateForm(EntityCustomer customer, String checkPassword);
+*/
 }

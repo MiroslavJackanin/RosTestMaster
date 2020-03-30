@@ -24,4 +24,23 @@ public class ServiceCustomerImpl implements ServiceCustomer {
     public void addCustomer(EntityCustomer customer) {
         daoCustomer.addCustomer(customer);
     }
+
+    @Override
+    @Transactional
+    public EntityCustomer getCustomer(int id) {
+
+        return daoCustomer.getCustomer(id);
+    }
+
+    @Override
+    @Transactional
+    public void deleteCustomer(int id) {
+
+        daoCustomer.deleteCustomer(id);
+    }
+
+/*    @Override
+    public boolean validateForm(EntityCustomer customer, String checkPassword) {
+        return daoCustomer.validateForm(customer, checkPassword);
+    }*/
 }

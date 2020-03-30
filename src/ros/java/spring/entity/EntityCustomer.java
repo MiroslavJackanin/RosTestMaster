@@ -22,6 +22,9 @@ public class EntityCustomer {
     @Column(name = "email", nullable = false, length = 100)
     private String email;
 
+    @Column(name = "phoneNumber", nullable = false, length = 100)
+    private String phone;
+
     @Column(name = "password", nullable = false, length = 100)
     private String password;
 
@@ -30,10 +33,11 @@ public class EntityCustomer {
 
     public EntityCustomer() {
     }
-    public EntityCustomer(String firstName, String lastName, String password, String email, Timestamp registrationDate){
+    public EntityCustomer(String firstName, String lastName, String password, String email, String phone,Timestamp registrationDate){
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
+        this.phone = phone;
         this.password = password;
         this.registrationDate = registrationDate;
     }
@@ -49,6 +53,9 @@ public class EntityCustomer {
     }
     public String getEmail() {
         return email;
+    }
+    public String getPhone() {
+        return phone;
     }
     public String getPassword() {
         return password;
@@ -69,6 +76,9 @@ public class EntityCustomer {
     public void setEmail(String email) {
         this.email = email;
     }
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
     public void setPassword(String password) {
         this.password = password;
     }
@@ -83,6 +93,7 @@ public class EntityCustomer {
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", email='" + email + '\'' +
+                ", phone='" + phone + '\'' +
                 ", password='" + password + '\'' +
                 ", registrationDate=" + registrationDate +
                 '}';
@@ -96,11 +107,12 @@ public class EntityCustomer {
                 Objects.equals(firstName, that.firstName) &&
                 Objects.equals(lastName, that.lastName) &&
                 Objects.equals(email, that.email) &&
+                Objects.equals(phone, that.phone) &&
                 Objects.equals(password, that.password) &&
                 Objects.equals(registrationDate, that.registrationDate);
     }
     @Override
     public int hashCode() {
-        return Objects.hash(id, firstName, lastName, email, password, registrationDate);
+        return Objects.hash(id, firstName, lastName, email, phone, password, registrationDate);
     }
 }

@@ -21,13 +21,18 @@
         </div>
         <div>
             <form:form action="processAddCustomerForm" modelAttribute="customer" method="post">
+                
+                <form:hidden path="id"/>
+                
                 First name: <form:input path="firstName"/>
                 <br><br>
-                First name: <form:input path="lastName"/>
+                Last name: <form:input path="lastName"/>
                 <br><br>
                 Password:   <form:input path="password"/>
                 <br><br>
                 Email:      <form:input path="email"/>
+                <br><br>
+                Phone number:<form:input path="phone"/>
                 <br><br>
                 <input type="submit" value="Submit" class="add-button">
             </form:form>

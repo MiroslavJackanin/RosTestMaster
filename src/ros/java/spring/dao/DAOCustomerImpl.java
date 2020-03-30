@@ -30,6 +30,27 @@ public class DAOCustomerImpl implements DAOCustomer {
         customer.setRegistrationDate(new Timestamp(System.currentTimeMillis()));
 
         Session session = sessionFactory.getCurrentSession();
-        session.save(customer);
+        session.saveOrUpdate(customer);
     }
+
+    @Override
+    public EntityCustomer getCustomer(int id) {
+
+        Session session = sessionFactory.getCurrentSession();
+        return session.get(EntityCustomer.class, id);
+    }
+
+    @Override
+    public void deleteCustomer(int theId) {
+        Session session = sessionFactory.getCurrentSession();
+
+        Query query = session.createQuery("DELETE FROM EntityCustomer WHERE id=:customerId");
+        query.setParameter("customerId", theId);
+        query.executeUpdate();
+    }
+
+/*    @Override
+    public boolean validateForm(EntityCustomer customer, String checkPassword) {
+        return customer.getPassword().equals(checkPassword);
+    }*/
 }
