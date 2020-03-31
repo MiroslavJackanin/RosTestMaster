@@ -67,7 +67,7 @@
 	</section>
 	
 	<section id="registerHub">
-		<div class="exit" onClick="exit()">X</div>
+		<div id="exit" onClick="exit()">X</div>
 	
 		<p class="registerHubHead">Registrovať sa</p>
 		<div class="leftReg">
