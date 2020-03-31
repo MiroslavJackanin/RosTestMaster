@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="sk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROS</title>
+	<link rel="icon" href="obr/icon.png">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body class="reservation">
+<div class="leftWallred"></div>
+
+
+<div class="rightWallred"></div>
+	<div class="wrapReservation">
+
+
+			<div class="logoBottom"></div>
+			<h2>Registrácia reštaurácie</h2>
+
+			<form class="registrationRestaurant">
+
+				<div class="wrapForm">
+					<label class="nameForm" style="background:#c2000b; padding:7px; border-radius:10px">Meno reštaurácie :</label><br>
+					<input class="nameFormInput" type="text" placeholder ="pr. PIZZERIA ROS"><br>
+				</div>
+
+				<div class="wrapForm">
+					<label class="nameForm" style="background:#c2000b; padding:7px; border-radius:10px">Sídlo reštaurácie :</label><br>
+					<input class="nameFormInput" type="text" placeholder ="pr. Hlavná 5, Košice">
+				</div>
+
+				<div class="wrapForm">
+					<label class="nameForm" style="background:#c2000b; padding:7px; border-radius:10px">Vybrať logo :</label><br>
+					<input class="nameFormInput fileInput" type="file">
+					<p class="infoFormLogo">Podporované formáty sú .jpg a .png</p>
+				</div>
+				<div class="wrapForm">
+					<div class="uploadedLogo"></div>
+				</div>
+
+				<div class="wrapForm100">
+					<label class="nameForm100" style="background:#c2000b; padding:7px; border-radius:10px">Vyplňte kľúčové slová reštaurácie :</label><br>
+					<input class="nameFormInput100" type="text" placeholder ="pr. hamburger, pizza, kvalita, bryndzové halušky..."><br>
+				</div>
+
+
+				<div class="wrapForm100">
+					<label class="nameForm100" style="background:#c2000b; padding:7px; border-radius:10px">Označte niekoľko výhod Vašej reštaurácie :</label><br>
+
+				</div>
+
+
+				<div class="wrapFormCheckbox">
+
+					<label class="checkForm">wifi</label>
+					<input type="checkbox" class="checkboxAlign">
+					<label class="checkForm">s deťmi</label>
+					<input type="checkbox" class="checkboxAlign"><br>
+					<label class="checkForm">s kočíkom</label>
+					<input type="checkbox" class="checkboxAlign">
+
+					<label class="checkForm">bez detí</label>
+					<input type="checkbox" class="checkboxAlign"><br>
+					<label class="checkForm">romantika</label>
+					<input type="checkbox" class="checkboxAlign"><br>
+					<label class="checkForm">slovenská kuchyňa</label>
+					<input type="checkbox" class="checkboxAlign">
+
+				</div>
+
+
+				<div class="wrapFormCheckbox">
+
+					<label class="checkForm">wifi</label>
+					<input type="checkbox" class="checkboxAlign">
+					<label class="checkForm">s deťmi</label>
+					<input type="checkbox" class="checkboxAlign"><br>
+					<label class="checkForm">s kočíkom</label>
+					<input type="checkbox" class="checkboxAlign">
+
+					<label class="checkForm">bez detí</label>
+					<input type="checkbox" class="checkboxAlign"><br>
+					<label class="checkForm">romantika</label>
+					<input type="checkbox" class="checkboxAlign"><br>
+					<label class="checkForm">slovenská kuchyňa</label>
+					<input type="checkbox" class="checkboxAlign">
+
+				</div>
+
+				<div class="wrapFormCheckbox">
+
+					<label class="checkForm">wifi</label>
+					<input type="checkbox" class="checkboxAlign">
+					<label class="checkForm">s deťmi</label>
+					<input type="checkbox" class="checkboxAlign"><br>
+					<label class="checkForm">s kočíkom</label>
+					<input type="checkbox" class="checkboxAlign">
+
+					<label class="checkForm">bez detí</label>
+					<input type="checkbox" class="checkboxAlign"><br>
+					<label class="checkForm">romantika</label>
+					<input type="checkbox" class="checkboxAlign"><br>
+					<label class="checkForm">slovenská kuchyňa</label>
+					<input type="checkbox" class="checkboxAlign">
+
+				</div>
+
+
+				<div class="wrapFormCheckbox">
+
+					<label class="checkForm">wifi</label>
+					<input type="checkbox" class="checkboxAlign">
+					<label class="checkForm">s deťmi</label>
+					<input type="checkbox" class="checkboxAlign"><br>
+					<label class="checkForm">s kočíkom</label>
+					<input type="checkbox" class="checkboxAlign">
+
+					<label class="checkForm">bez detí</label>
+					<input type="checkbox" class="checkboxAlign"><br>
+					<label class="checkForm">romantika</label>
+					<input type="checkbox" class="checkboxAlign"><br>
+					<label class="checkForm">slovenská kuchyňa</label>
+					<input type="checkbox" class="checkboxAlign">
+
+				</div>
+
+
+				<div class="wrapForm100">
+
+						<label class="nameForm100" style="background:#c2000b; padding:7px; border-radius:10px">Vyplňte otváracie hodiny Vašej reštaurácie :</label><br>
+				</div>
+
+				<div class="wrapHourForm">
+					<p class="hourFormHead">Pondelok</p>
+					<p class="hourForm">od</p>
+					<input class="hourInput" type="number">
+					<p class="hourForm">:</p>
+					<input class="hourInput" type="number">
+					<p class="hourForm" style="margin-left:20px">do</p>
+					<input class="hourInput" type="number">
+					<p class="hourForm">:</p>
+					<input class="hourInput" type="number">
+					<p class="hourFormClosed">Zatvorené</p>
+					<input type="checkbox">
+				</div>
+					<div class="wrapHourForm">
+						<p class="hourFormHead">Utorok</p>
+						<p class="hourForm">od</p>
+						<input class="hourInput" type="number">
+						<p class="hourForm">:</p>
+						<input class="hourInput" type="number">
+						<p class="hourForm" style="margin-left:20px">do</p>
+						<input class="hourInput" type="number">
+						<p class="hourForm">:</p>
+						<input class="hourInput" type="number">
+						<p class="hourFormClosed">Zatvorené</p>
+						<input type="checkbox">
+					</div>
+
+					<div class="wrapHourForm">
+						<p class="hourFormHead">Streda</p>
+						<p class="hourForm">od</p>
+						<input class="hourInput" type="number">
+						<p class="hourForm">:</p>
+						<input class="hourInput" type="number">
+						<p class="hourForm" style="margin-left:20px">do</p>
+						<input class="hourInput" type="number">
+						<p class="hourForm">:</p>
+						<input class="hourInput" type="number">
+						<p class="hourFormClosed">Zatvorené</p>
+						<input type="checkbox">
+					</div>
+
+					<div class="wrapHourForm">
+						<p class="hourFormHead">Štvrtok</p>
+						<p class="hourForm">od</p>
+						<input class="hourInput" type="number">
+						<p class="hourForm">:</p>
+						<input class="hourInput" type="number">
+						<p class="hourForm" style="margin-left:20px">do</p>
+						<input class="hourInput" type="number">
+						<p class="hourForm">:</p>
+						<input class="hourInput" type="number">
+						<p class="hourFormClosed">Zatvorené</p>
+						<input type="checkbox">
+					</div>
+
+					<div class="wrapHourForm">
+						<p class="hourFormHead">Piatok</p>
+						<p class="hourForm">od</p>
+						<input class="hourInput" type="number">
+						<p class="hourForm">:</p>
+						<input class="hourInput" type="number">
+						<p class="hourForm" style="margin-left:20px">do</p>
+						<input class="hourInput" type="number">
+						<p class="hourForm">:</p>
+						<input class="hourInput" type="number">
+						<p class="hourFormClosed">Zatvorené</p>
+						<input type="checkbox">
+					</div>
+
+					<div class="wrapHourForm">
+						<p class="hourFormHead">Sobota</p>
+						<p class="hourForm">od</p>
+						<input class="hourInput" type="number">
+						<p class="hourForm">:</p>
+						<input class="hourInput" type="number">
+						<p class="hourForm" style="margin-left:20px">do</p>
+						<input class="hourInput" type="number">
+						<p class="hourForm">:</p>
+						<input class="hourInput" type="number">
+						<p class="hourFormClosed">Zatvorené</p>
+						<input type="checkbox">
+					</div>
+
+					<div class="wrapHourForm">
+						<p class="hourFormHead">Nedeľa</p>
+						<p class="hourForm">od</p>
+						<input class="hourInput" type="number">
+						<p class="hourForm">:</p>
+						<input class="hourInput" type="number">
+						<p class="hourForm" style="margin-left:20px">do</p>
+						<input class="hourInput" type="number">
+						<p class="hourForm">:</p>
+						<input class="hourInput" type="number">
+						<p class="hourFormClosed">Zatvorené</p>
+						<input type="checkbox">
+					</div>
+
+				<div class="wrapForm100">
+
+						<label class="nameForm100" style="background:#c2000b; padding:7px; border-radius:10px">Označte políčka ktoré budú označované ako Vaše stoly v reštaurácií :</label><br>
+				</div>
+
+				<div class="wrapFormGrid">
+					<div class="line">
+
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+					</div>
+					<div class="line">
+
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+					</div>
+
+						<div class="line">
+
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+					</div>
+					<div class="line">
+
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+					</div>
+
+						<div class="line">
+
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+					</div>
+					<div class="line">
+
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+					</div>
+						<div class="line">
+
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+					</div>
+					<div class="line">
+
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+					</div>
+					<div class="line">
+
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+					</div>
+					<div class="line">
+
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+					</div>
+				</div>
+
+
+				<div class="wrapForm100">
+
+					<label class="nameForm100" style="background:#c2000b; padding:7px; border-radius:10px">Približná cenová kategória reštaurácie :</label><br>
+
+					<div class="wrapPrice">
+						<label class="priceForm">€</label>
+						<input type="checkbox">
+						<label class="priceForm">€€</label>
+						<input type="checkbox">
+						<label class="priceForm">€€€</label>
+						<input type="checkbox">
+					</div>
+				</div>
+
+
+				<div class="wrapForm100">
+
+					<label class="nameForm100" style="background:#c2000b; padding:7px; border-radius:10px">Vyplňte jedálny lístok :</label>
+
+					<div id="wrapMenuCategory">
+						<input type="text" class="categoryName" placeholder="Názov kategórie">
+						<div class="aboutMenu">
+							<p class="aboutMenuText">Meno</p>
+							<p class="aboutMenuText">Alergény</p>
+							<p class="aboutMenuText">Počet</p>
+							<p class="aboutMenuText">Cena</p>
+						</div>
+
+
+						<div id="aboutMenuInputs">
+							<input type="text" class="writtenMenu" placeholder="pr. Kuracie prsia na smotane so zemiakmi">
+							<input type="text" class="writtenMenu" placeholder="pr. 7">
+							<input type="text" class="writtenMenu" placeholder="pr. 100g kuracie prsia, 150g zemiaky">
+							<input type="text" class="writtenMenu" placeholder="pr. 3,35€">
+						</div>
+
+						<div id="wrapMenuInputs"></div>
+
+						<div class="addAboutMenuInputs" onclick="addItem()">+</div>
+					</div>
+
+
+				<div id="wrapMenuCat"></div>
+
+					<div class="addNewCategory" onclick="addCategory()">+</div>
+
+
+
+				</div>
+
+
+
+
+
+
+
+
+
+
+				</div>
+			</form>
+	</div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

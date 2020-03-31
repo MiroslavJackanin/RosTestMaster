@@ -1,0 +1,1128 @@
+body{
+	height:auto;
+	padding:0;
+	margin:0 auto;
+	box-sizing:border-box;
+    font-family: Nunito;
+	font-size:18px;
+	overflow-x:hidden;
+}
+.homepageCustomer{
+	background:#1da4b1;
+}
+.systemCompany{
+	background:#283941;
+}
+.reservation{
+	background:#222a31;
+}
+@font-face {
+  font-family: Nunito;
+  src: url(font/Nunito-Regular.ttf);
+}
+@font-face {
+  font-family: NunitoBold;
+  src: url(font/Nunito-Bold.ttf);
+}
+input { 
+	outline: none; 
+}
+/*
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px white; 
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: red; 
+}*/
+/* < HOME PAGE */
+.wrapHomePage{
+	display:flex;
+	justify-content: center;
+	flex-direction: column;
+}/*
+.leftWall{
+	width:1%;
+	height:200vh;
+	background:#46b4b7;
+	position:absolute;
+}
+.rightWall{
+	width:1%;
+	height:200vh;
+	background:#46b4b7;
+	position:absolute;
+	right:0;
+	top:0;
+}*/
+header{
+	width:95%;
+	height:110px;
+	background:#222a31;
+	margin:0 auto;
+}
+.leftWall{
+	width:1%;
+	height:200vh;
+	background:#46b4b7;
+	position:absolute;
+}
+.rightWall{
+	width:1%;
+	height:200vh;
+	background:#46b4b7;
+	position:absolute;
+	right:0;
+	top:0;
+}	
+
+.logo{
+	width:100px;
+	height:50px;
+	background:url(obr/logo.png);
+	background-size:contain;
+	background-repeat:no-repeat;
+	display:inline-block;
+	margin:25px;
+}
+.wrapLoginForms{
+	width:165px;
+	height:75px;
+	float:right;
+	margin-right:15px;
+	margin-top:15px;
+}
+.loginButton{
+	width:160px;
+	height:35px;
+	color:white;
+	background:#ac3757;
+	display:inline-block;
+	border:none;
+	font-family:NunitoBold;
+	font-size:22px;
+	float:right;
+	border-bottom:4px solid #8c314d;
+	border-radius:3px;
+	cursor:pointer;
+}
+.txt{
+	font-size:16px;
+	color:white;
+	display:inline-block;
+	font-family:NunitoBold;
+	
+}
+.registerButton{
+	width:120px;
+	height:28px;
+	color:white;
+	background:#ac3757;
+	display:inline-block;
+	border:none;
+	font-family:NunitoBold;
+	font-size:16px;
+	border-radius:3px;
+	cursor:pointer;
+	}
+article{
+	width:95%;
+	height:560px;
+	margin:0 auto;
+	background:url(obr/headPhoto.jpg);
+	background-size:cover;
+	background-position:bottom;
+	background-repeat:no-repeat;
+}
+.iconRestaurant{
+	width:90px;
+	height:60px;
+	background:url(obr/restaurantIcon.png);
+	background-size:contain;
+	background-position:bottom;
+	background-repeat:no-repeat;
+	margin:0 auto;
+	margin-top:150px;
+}
+h1{
+	color:white;
+	font-size:70px;
+	margin:0 auto;
+	text-align:center;
+}
+.h1{
+	color:white;
+	font-size:35px;
+	margin:0 auto;
+	text-align:center;
+	font-family:NunitoBold;
+}
+hr{
+	width:300px;
+	background:white;
+	height:3px;
+	border-radius:15px;
+}
+.findRestaurant {
+	width:95%;
+	margin:0 auto;
+	background:#222a31;
+	height:100px;
+	text-align:center
+}
+.findRestaurantButton{
+	width:250px;
+	height:35px;
+	color:white;
+	background:#ac3757;
+	border:none;
+	font-size:18px;
+	text-align:center;
+	border-bottom:4px solid #8c314d;
+	margin-top:30px;
+	border-radius:5px;
+	cursor:pointer;
+	font-family:NunitoBold;
+}
+/* HOME PAGE > */
+/* < LOGIN LOGOUT */
+#login{
+	width:300px;
+	height:380px;
+	position:absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background:#222a31;
+	color:white;
+	border-radius:15px;
+	border:2px solid #323a3f;
+	box-shadow: 0px 0px 83px 17px rgba(0,0,0,0.75);
+	display:none;
+}
+.loginHead{
+	width:80%;
+	margin:0 auto;
+	text-align:center;
+	font-size:40px;
+	font-family:NunitoBold;
+	border-bottom:4px solid #8c314d;
+	margin-top:30px;
+	margin-bottom:30px;
+}
+.loginLabel{
+	font-size:14px;
+}
+.loginInput{
+	width:90%;
+	height:30px;
+	margin:0 auto;
+	margin-top:10px;
+	border-radius:10px;
+	margin-bottom:10px;
+	border: 2px solid #495054;
+	font-family:NunitoBold;
+	text-align:center;
+}
+.loginSubmit {
+	margin:0 auto;
+	text-align:center;
+	background: #ac3757;
+	border:none;
+	color:white;
+	width:140px;
+	height:40px;
+	font-family:NunitoBold;
+	font-size:18px;
+	border-bottom:4px solid #8c314d;
+	border-radius:5px;
+	margin-top:20px;
+	cursor:pointer;
+}
+.loginWrap{
+	margin-left:26px;
+	text-align:left;
+}
+.login {
+	text-align:center;
+}
+#exit {
+	position:absolute;
+	right:0;
+	font-family:NunitoBold;
+	margin:12px;
+	color: #495054;
+	cursor:pointer;
+	
+}
+#registerHub{
+	width:400px;
+	height:300px;
+	position:absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background:#222a31;
+	color:white;
+	border-radius:15px;
+	border:2px solid #323a3f;
+	box-shadow: 0px 0px 83px 17px rgba(0,0,0,0.75);
+	text-align:center;
+	display:none;
+}
+.registerHubHead{
+	width:80%;
+	margin:0 auto;
+	text-align:center;
+	font-size:40px;
+	font-family:NunitoBold;
+	border-bottom:4px solid #8c314d;
+	margin-top:30px;
+	margin-bottom:30px;
+}
+.leftReg,.rightReg{
+	width:80%;
+	border:1px solid #8c314d;
+	margin:0 auto;
+	background: #ac3757;
+	border-bottom:4px solid #8c314d;
+	border-radius:5px;
+	font-size:20px;
+	font-family:NunitoBold;
+	margin-bottom:10px;
+	cursor:pointer;
+}
+.registerCustomer{
+	text-align:center;
+
+}
+#registerCustomer{
+	width:700px;
+	height:450px;
+	position:absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background:#222a31;
+	color:white;
+	border-radius:15px;
+	border:2px solid #323a3f;
+	box-shadow: 0px 0px 83px 17px rgba(0,0,0,0.75);
+	text-align:left;
+	display:none;
+}
+.regInput{
+	width:90%;
+	height:30px;
+	margin:0 auto;
+	margin-top:10px;
+	border-radius:10px;
+	margin-bottom:10px;
+	border: 2px solid #495054;
+	font-family:NunitoBold;
+	text-align:left;
+	margin-left:10px;
+	padding-left:5px;
+	
+}
+.regLabel{
+	margin-left:10px;
+	font-size:14px;
+}
+.regWrapRight{
+	width:280px;
+	display:inline-block;
+	text-align:left;
+	margin-left:-5px;
+	border-left: 2px solid #495054;
+}
+.regWrapLeft{
+	width:280px;
+	display:inline-block;
+	text-align:left;
+}
+.regSubmit {
+	background: #ac3757;
+	border:none;
+	color:white;
+	width:140px;
+	height:40px;
+	font-family:NunitoBold;
+	font-size:18px;
+	border-bottom:4px solid #8c314d;
+	border-radius:5px;
+	margin-top:20px;
+	cursor:pointer;
+}
+.registerCompany{
+	text-align:center;
+}
+#registerCompany{
+	width:700px;
+	height:450px;
+	position:absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background:#222a31;
+	color:white;
+	border-radius:15px;
+	border:2px solid #323a3f;
+	box-shadow: 0px 0px 83px 17px rgba(0,0,0,0.75);
+	text-align:left;
+	display:none;
+}
+
+.registerCompanyNext{
+	text-align:center;
+
+}
+#registerCompanyNext{
+	width:700px;
+	height:450px;
+	position:absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background:#222a31;
+	color:white;
+	border-radius:15px;
+	border:2px solid #323a3f;
+	box-shadow: 0px 0px 83px 17px rgba(0,0,0,0.75);
+	text-align:left;
+	display:none;
+}
+
+.registerCompanyNext2{
+	text-align:center;
+
+}
+#registerCompanyNext2{
+	width:700px;
+	height:250px;
+	position:absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background:#222a31;
+	color:white;
+	border-radius:15px;
+	border:2px solid #323a3f;
+	box-shadow: 0px 0px 83px 17px rgba(0,0,0,0.75);
+	text-align:left;
+	display:none;
+}
+/* LOGIN LOGOUT > */
+
+
+/* < MENU in profilecompany.html */
+.menu {
+	width:240px;
+	min-height:100vh;
+	height:auto;
+	box-sizing:border-box;
+	border-right:100px solid #c2000b;
+	background:#a6000a;
+	display:inline-block;
+	margin-left:-140px;
+	z-index:2;
+}
+.menu:hover {
+	transition:.3s ease-out;
+	margin-left:0px;
+}
+.ulMenu {
+	margin:0 auto;
+	padding:0;
+}
+.liMenu {
+	margin:0 auto;
+	width:240px;
+	height:70px;
+	list-style:none;
+	margin-bottom:20px;
+	
+}
+.aMenu {
+	text-decoration: none;
+}
+.menuText {
+	width:140px;
+	height:60px;
+	color:white;
+	display:inline-block;
+	text-align:right;
+	margin:0 auto;
+	margin-right:20px;
+	background:#c2000b;
+	padding-top:10px;
+	overflow:auto;
+	margin-top:20px;
+	
+	
+}
+.picMessage {
+	width:50px;
+	height:70px;
+	background:url(obr/message.png);
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-position:center;
+	display:inline-block;
+}
+.picPinned{
+	width:50px;
+	height:70px;
+	background:url(obr/pinned.png);
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-position:center;
+	display:inline-block;
+	
+}
+.picOrders{
+	width:50px;
+	height:70px;
+	background:url(obr/orders.png);
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-position:center;
+	display:inline-block;
+	
+}
+.picCalendar{
+	width:50px;
+	height:70px;
+	background:url(obr/calendar.png);
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-position:center;
+	display:inline-block;
+	
+}
+.picWeekly{
+	width:50px;
+	height:70px;
+	background:url(obr/weekly.png);
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-position:center;
+	display:inline-block;
+	
+}
+.picMenu{
+	width:50px;
+	height:70px;
+	background:url(obr/menu.png);
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-position:center;
+	display:inline-block;
+	
+}
+.picRestaurant{
+	width:50px;
+	height:70px;
+	background:url(obr/restaurant.png);
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-position:center;
+	display:inline-block;
+	
+}
+/* MENU in profilecompany.html > */
+
+
+/* CONTAINERS in profilecompany.html > */
+.twoThirdContainer{
+	width:600px;
+	height:40vh;
+	background:#222a31;
+	border-radius:10px;
+	display:inline-block;
+	margin-left:10px;
+}
+.thirdContainer{
+	width:300px;
+	height:40vh;
+	background:#222a31;
+	border-radius:10px;
+	display:inline-block;
+}
+.wrapContainers{
+	display:block;
+	width:90%;
+	overflow:auto;
+}
+.wrapMenu {
+	display:inline-block;
+}
+.afterLogin {
+	width:88%;
+	color:white;
+	box-sizing:border-box;
+	display:inline-block;
+	min-height:100vh;
+	overflow-x: auto;
+	position:absolute;
+	white-space: nowrap;
+	
+}
+.categoryText{
+	margin:30px;
+	font-size:30px;
+}
+
+
+
+/* CONTAINERS in profilecompany.html > */
+
+
+
+/* < reservation.html */
+
+
+.leftWallred{
+	width:2%;
+	min-height:400vh;
+	background:#a6000a;
+	position:absolute;
+}
+.rightWallred{
+	width:2%;
+	min-height:400vh;
+	background:#a6000a;
+	position:absolute;
+	right:0;
+	top:0;
+	
+}
+.logoBottom{
+	width:100px;
+	height:50px;
+	background:url(obr/logo.png);
+	background-size:contain;
+	background-repeat:no-repeat;
+	display:inline-block;
+	margin:25px;
+	margin-right:3%;
+	position:fixed;
+	right:0;
+	bottom:0;
+}
+h2 {
+	width:500px;
+	margin:0 auto;
+	height:50px;
+	text-align:center;
+	color:white;
+	font-size:45px;
+	padding:15px;
+	border-bottom:3px solid white;
+	padding-top:20px;
+}
+.nameForm{
+	margin-left:5%;
+	margin-right:5%;
+	color:white;
+	display:inline-block;
+}
+.nameFormInput{
+	width:90%;
+	height:30px;
+	display:inline-block;
+	border:none;
+	border-radius:15px;
+	margin:5px;
+	padding:5px;
+	font-family:Nunito;
+	margin-left:5%;
+	margin-right:5%;
+	background:white;
+}
+.wrapForm {
+	width:48%;
+	display:inline-block;
+	margin-top:60px;
+	position:relative;
+}
+.wrapReservation {
+	width:70%;
+	margin:0 auto;
+	
+}
+.infoFormLogo{
+	width:48%;
+	color:white;
+	margin-left:15px;
+	font-size:14px;
+	text-align:right;
+	float:right;
+	margin-right:5%;
+}
+.fileInput {
+	padding-left:10px;
+	padding-top:10px;
+	padding-right:0px;
+
+}
+.uploadedLogo{
+	width:200px;
+	height:200px;
+	background:white;
+	position:absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.wrapForm100 {
+	width:95%;
+	display:inline-block;
+	margin-top:50px;
+}
+.checkForm{
+	width:85%;
+	color:white;
+	display:inline-block;
+	text-align:right;
+}
+.checkboxAlign {
+	display:inline-block;
+	float:right;
+}
+.wrapFormCheckbox {
+	display:inline-block;
+	width:200px;
+	margin-left:5%;
+}
+.nameForm100{
+	width:102%;
+	color:white;
+	text-align:center;
+	margin-bottom:20px;
+	display:inline-block;
+	font-size:20px;
+	margin-top:10px;
+}
+.nameFormInput100{
+	width:102%;
+	height:30px;
+	display:inline-block;
+	border:none;
+	border-radius:15px;
+	margin:5px;
+	padding:5px;
+	font-family:Nunito;
+	background:white;
+}
+.hourForm{
+	color:white;
+	font-family:Nunito;
+	display:inline-block;
+}
+.hourFormHead{
+	color:white;
+	font-family:NunitoBold;
+	display:inline-block;
+	font-size:20px;
+	margin-right:10px;
+}
+.hourFormClosed{
+	color:white;
+	display:inline-block;
+	font-size:15px;
+	margin-left:20px;
+}
+.hourInput {
+	display:inline-block;
+	
+	width:30px;
+	height:30px;
+	display:inline-block;
+	border:none;
+	border-radius:5px;
+	padding:5px;
+	font-family:Nunito;
+	background:white;
+}
+.wrapHourForm{
+	text-align:center;
+	margin:0 auto;
+}
+.wrapFormGrid {
+	width:95%;
+	text-align:center;
+}
+.container {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+.container input {
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.container input:checked ~ .checkmark {
+  background-color: #fb5048;
+  border-radius:10px;
+}
+.line {
+	display:inline-block;
+	margin: 10px;
+}
+.priceForm {
+	color:white;
+	font-family:Nunito;
+	margin:10px;
+}
+.wrapPrice {
+	text-align:center;
+}
+.categoryName{
+	height:20px;
+	padding:10px;
+	border:none;
+	background:#c2000b;
+	font-family:NunitoBold;
+	border-radius:10px;
+	color:white;
+	font-size:20px;
+	margin-top:20px;
+}
+.categoryName::placeholder { 
+  color: #fb5048;
+  opacity: 1; /* Firefox */
+}
+.aboutMenu{
+	background:#fb5048;
+	width: 105%;
+	display: flex;
+	border-radius:10px;
+	margin-top:10px;
+}
+.aboutMenuText{
+	flex-basis: 100%;
+	text-align: center;
+	border-radius:10px;
+	background:#222a31;
+	color:white;
+	margin:5px;
+}
+#aboutMenuInputs{
+	background:white;
+	width: 105%;
+	display: flex;
+	border-radius:10px;
+	margin-top:10px;
+}
+.writtenMenu{
+	width:50px;
+	padding:5px;
+	flex-basis: 100%;
+	border-radius:10px;
+	border:none;
+	background:#e5e5e5;
+	color:black;
+	margin:5px;
+	font-family:Nunito;
+}
+.addAboutMenuInputs{
+	margin-top:10px;
+	width:30px;
+	height:20px;
+	border-radius:5px;
+	color:black;
+	font-family:NunitoBold;
+	background:white;
+	font-size:22px;
+	text-align:center;
+	padding-bottom:10px;
+	cursor:pointer;
+}
+.addNewCategory{
+	margin-top:10px;
+	width:40px;
+	height:30px;
+	border-radius:5px;
+	color:white;
+	font-family:NunitoBold;
+	background:#c2000b;
+	font-size:30px;
+	text-align:center;
+	padding-bottom:10px;
+	float:right;
+	margin-right:-5%;
+	cursor:pointer;
+	
+}
+
+
+
+/* reservation.html > */
+
+
+/* < reservation form in index.html */
+#reservation{
+	width:95%;
+	margin:0 auto;
+	height:auto;
+	background:#222a31;
+}
+h3 {
+	width:100%;
+	color:white;
+	font-size:40px;
+	text-align:center;
+	padding-top:40px;
+}
+.reservationLabel{
+	width:100%;
+	display:inline-block;
+	color:white;
+	text-align: left;
+}
+.wrapFormReservation{	
+	height:70px;
+	display:inline-block;
+	margin:5px;
+}
+.optionText{
+	display:inline-block;
+	font-size:12px;
+	color:white;
+}
+.reservationInput{
+	width:150px;
+	height:30px;
+	border:none;
+	margin-top:15px;
+	font-family:NunitoBold;
+}
+.wrapFirstForm{
+	display: flex;
+	justify-content: left;
+	flex-wrap: wrap;
+}
+.wrapSecondForm{
+	display: flex;
+	justify-content: left;
+	display:none;
+}
+.wrapFormReservationCheckBox{
+	margin-top:40px;
+	height:40px;
+}
+.wrapFormReservationSubmit{
+	margin:10px;
+	margin-top:40px;
+	height:40px;
+}
+.reservationSubmit{
+	width:70px;
+	font-family:NunitoBold;
+	padding:10px;
+	border:none;
+	background:#ac3757;
+	color:white;
+}
+.reservationInputSearch{
+	width:150px;
+	height:20px;
+	border:none;
+	margin-top:15px;
+	font-family:NunitoBold;
+	padding:5px;
+}
+.wrapWholeForm{
+	width:80%;
+	margin:0 auto;
+	
+}
+/* reservation form in index.html > */
+
+
+/* < restaurants in index.html */
+.wrapRestaurants {
+	padding-top:60px;
+	padding-bottom:80px;
+	text-align:center;
+	
+}
+.infoRestaurant{
+	width:200px;
+	height:340px;
+	background:#ac3757;
+	padding-top:15px;
+	position:relative;
+	margin-top:20px;
+	display:inline-block;
+	margin-left:10px;
+	margin-right:10px;
+}
+.nameRestaurant{
+	width:80%;
+	font-size:20px;
+	color:white;
+	margin:0 auto;
+	text-align:center;
+}
+.peopleAndPriceSpace {
+      border-bottom: 40px solid #222a31;
+      border-left: 20px solid transparent;
+      border-right: 0px solid transparent;
+      height: 0;
+      width: 50px;
+	  transform:rotate(-90deg);
+	  position:absolute;
+	  right:-20px;
+	  top:0;
+}
+.groupPeople{
+	  position:absolute;
+	  right:0;
+	  top:0;
+	
+}
+.person{
+	width:7px;
+	height:18px;
+	background:url(obr/person.png);
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-position:right;
+	display:inline-block;
+}
+.groupPrice{
+	  position:absolute;
+	  right:0;
+	  top:20px;
+	
+}
+.price{
+	width:8px;
+	height:20px;
+	background:url(obr/euro.png);
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-position:right;
+	display:inline-block;
+	margin-left:-2px;
+	
+}
+.whiteWrap{
+	width:80%;
+	height:250px;
+	background:white;
+	margin:0 auto;
+	margin-top:10px;
+	padding-top:5px;
+}
+.logoRestaurant {
+	width:150px;
+	height:150px;
+	margin:0 auto;
+	background:url(obr/logorestaurant.png);
+	background-size:contain;
+	background-repeat:no-repeat;
+}
+.groupStars{
+	text-align:center;
+	margin-top:5px;
+}
+.star{
+	width:25px;
+	height:25px;
+	background:url(obr/star.png);
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-position:right;
+	display:inline-block;
+	
+}
+.staryellow{
+	width:25px;
+	height:25px;
+	background:url(obr/staryellow.png);
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-position:right;
+	display:inline-block;
+	
+}
+.percent{
+	margin:0 auto;
+	text-align:center;
+	font-family:NunitoBold;
+	font-size:25px;
+	
+}
+.groupCircles{
+	margin:0 auto;
+	text-align:center;
+	
+}
+.circle{
+	width:10px;
+	height:10px;
+	border-radius:10px;
+	display:inline-block;
+	background:#222a31;
+}
+.circlegreen{
+	background:#80c41c;
+}
+.circlelightgreen{
+	background:#cce70b;
+}´
+.circleorange{
+	background:#ff8000;
+}
+.circlered{
+	background:#c2000b;
+}
+.cyanWrap{
+	background:#46b4b7;
+	width:100%;
+	height:25px;
+	position:relative;
+}
+.chooseText{
+	width:100%;
+	margin:0 auto;
+	text-align:center;
+	font-family:NunitoBold;
+	display:inline-block;
+	font-size:16px;
+	color:white;
+}
+.fromPrice{
+	position:absolute;
+	font-size:13px;
+	color:white;
+	right:5px;
+	bottom:0;
+	top:-8px;
+}	
+
+/* restaurants in index.html > */		
